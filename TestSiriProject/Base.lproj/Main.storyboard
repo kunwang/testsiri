@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestSiriProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSe-cM-OHC">
+                                <rect key="frame" x="157" y="423" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Qdl-8h-Ldv"/>
+                                    <constraint firstAttribute="width" constant="100" id="T3B-bd-joW"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0aC-Yc-Xtt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgJ-mD-mjL">
+                                <rect key="frame" x="107" y="309" width="200" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZSM-3q-F8s"/>
+                                    <constraint firstAttribute="height" constant="60" id="pop-Nl-mMe"/>
+                                </constraints>
+                                <state key="normal" title="Add shortcut to Siri"/>
+                                <connections>
+                                    <action selector="addShortCutClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPf-rZ-TXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPs-28-kwX">
+                                <rect key="frame" x="100" y="537" width="214" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmm-ca-jkS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VSe-cM-OHC" firstAttribute="top" secondItem="NgJ-mD-mjL" secondAttribute="bottom" constant="54" id="C1E-cd-BeX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sPs-28-kwX" secondAttribute="trailing" constant="100" id="GTN-II-Of7"/>
+                            <constraint firstItem="VSe-cM-OHC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lkn-xa-alt"/>
+                            <constraint firstItem="sPs-28-kwX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="LzS-Oj-HKS"/>
+                            <constraint firstItem="NgJ-mD-mjL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tfc-Ws-9rq"/>
+                            <constraint firstItem="VSe-cM-OHC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bc7-M8-1kv"/>
+                            <constraint firstItem="sPs-28-kwX" firstAttribute="top" secondItem="VSe-cM-OHC" secondAttribute="bottom" constant="54" id="qFu-c9-5gn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addShortCutButton" destination="NgJ-mD-mjL" id="I1M-nU-mEe"/>
+                        <outlet property="playButton" destination="VSe-cM-OHC" id="e53-cv-tu5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
